@@ -10,13 +10,13 @@ The web interface does not read this file: its sidebar is its own set of control
 """
 
 # 1.3 variation parameters ---------------------------------------------------------
-order_data_days = [3, 3] # first, last day of order_trips.csv to plan (1-127)
+order_data_days                     = [3, 3] # first, last day of order_trips.csv to plan (1-127)
 scenario                            = ['best case']  # 'best case' (bev low, ice high) | 'worst case'
 scenario_year                       = [2025]      # 2025...2045
 v2g_status                          = ['on']      # 'on' | 'off'
 work_hours_start                    = '06:00'     # earliest a trip or its empty leg may start
 work_hours_end                      = '18:00'     # latest a trip or its empty leg may end
-date_disposition                    = '07.11.2025'  # DD.MM.YYYY; curve base date only - the day is order_data_days
+date_disposition                    = '24.06.2026'  # DD.MM.YYYY; curve base date only - the day is order_data_days
 home_depot_location                 = '74635 Kupferzell Deutschland'
 route_chaining_status               = 'on'        # 'off' = no geography: any trip after any other
 location_tolerance_share            = 0.10        # "same place" radius, share of median trip distance
