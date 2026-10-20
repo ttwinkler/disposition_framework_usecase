@@ -1,0 +1,30 @@
+# Streamlit settings for the HDV disposition interface.
+# Committed on purpose: the interface is the standard operating environment of this
+# model, so how it presents itself is part of the tool rather than a local preference.
+
+[client]
+# "minimal" drops the Deploy button and the developer menu. This runs against a local
+# Gurobi licence and the datasets in inputs/ - there is nothing to deploy, and the button
+# only invited a question the tool cannot answer.
+toolbarMode = "minimal"
+showErrorDetails = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+# A dark base, because this is a tool people sit in front of for a long solve rather than
+# a page they glance at. The accent is the one saturated colour in the whole interface:
+# anything wearing it is either the primary action or the number that matters.
+base = "dark"
+primaryColor = "#4CC2FF"
+backgroundColor = "#0B0F14"
+secondaryBackgroundColor = "#141A22"
+textColor = "#E6EDF3"
+font = "sans serif"
+
+[server]
+# the launcher opens exactly one tab and shuts the server down when it closes, so there
+# is no session to keep warm in the background
+headless = false
+fileWatcherType = "none"
